@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mask_config_container"
+    android:orientation="vertical"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/ConfigInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_mask"/>
+
+        <EditText
+            android:id="@+id/edit_mask"
+            style="@style/ConfigInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/sample_mask"
+            android:inputType="text"
+            android:lines="1"
+            android:minWidth="50dp"
+            android:text="@string/sample_mask"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/ConfigInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mask_character"/>
+
+        <EditText
+            android:id="@+id/edit_mask_character"
+            style="@style/ConfigInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/sample_mask_character"
+            android:maxLength="1"
+            android:text="@string/sample_mask_character"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/check_enforce_mask_length"
+        style="@style/ConfigInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/enforce_mask_length"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/ConfigInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/input_type"/>
+
+        <Spinner
+            android:id="@+id/ddl_input_type"
+            style="@style/ConfigInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_remove_mask"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:textSize="12sp"
+        android:text="@string/remove_mask"/>
+</LinearLayout>

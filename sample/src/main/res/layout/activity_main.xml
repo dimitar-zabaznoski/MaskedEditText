@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="mk.webfactory.dz.maskededittextsample.MainActivity">
+
+    <mk.webfactory.dz.maskededittext.MaskedEditText
+        android:id="@+id/edit_masked_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/sample_mask"
+        android:inputType="text"
+        android:minWidth="200dp"
+        app:maskededittext_enforceMaskLength="false"
+        app:maskededittext_mask="###-###-###"
+        app:maskededittext_maskCharacter="#"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/lbl_raw_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/raw_input"/>
+
+        <TextView
+            android:id="@+id/txt_raw_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            tools:text="abc"/>
+    </LinearLayout>
+
+    <include
+        layout="@layout/mask_config"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="28dp"/>
+</LinearLayout>

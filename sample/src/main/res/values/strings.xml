@@ -1,0 +1,13 @@
+<resources>
+    <string name="sample_mask">###-###-###</string>
+
+    <string name="app_name">MaskedEditText</string>
+    <string name="raw_input">Raw input:</string>
+    <string name="set_mask">Mask</string>
+    <string name="mask_character">Mask character</string>
+    <string name="enforce_mask_length">"Enforce mask length    "</string>
+    <string name="sample_mask_character">#</string>
+    <string name="input_type">"Input type    "</string>
+    <string name="error_char_not_in_mask">Character not in mask!</string>
+    <string name="remove_mask">Remove Mask</string>
+</resources>
