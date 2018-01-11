@@ -1,6 +1,24 @@
 MaskedEditText
 =========================
 
+<table>
+  <tr>
+    <td>User input:</td>
+    <td>123456789</td>
+  </tr>
+  <tr>
+    <td>Mask:</td>
+    <td>+(###) ###-###</td>
+  </tr>
+  <tr>
+    <td>Mask character:</td>
+    <td>#</td>
+  </tr>
+ <tr>
+    <td>Output:</td>
+    <td>+(123) 456-789</td>
+  </tr>
+</table>
 
 ### Acceptance criteria:
  1. Mask is set in real time as input changes
