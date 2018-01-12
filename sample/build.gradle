@@ -11,19 +11,29 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+    signingConfigs {
+        testConfig {
+            keyAlias 'key'
+            keyPassword 'password'
+            storePassword 'password'
+            storeFile file('./testConfig')
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.testConfig
         }
     }
     productFlavors {}
 }
 
 dependencies {
-    implementation project(':library')
-//    implementation 'mk.webfactory.dz:maskededittext:1.0'
-
+    debugImplementation project(':library')
+    releaseImplementation 'mk.webfactory.dz:maskededittext:1.0'
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
