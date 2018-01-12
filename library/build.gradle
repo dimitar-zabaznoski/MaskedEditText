@@ -24,6 +24,12 @@
 
 apply plugin: 'com.android.library'
 
+ext {
+    PUBLISH_GROUP_ID = 'mk.webfactory.dz'
+    PUBLISH_ARTIFACT_ID = 'maskededittext'
+    PUBLISH_VERSION = '1.0'
+}
+
 android {
     compileSdkVersion 26
     buildToolsVersion '26.0.2'
@@ -62,3 +68,5 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 }
+
+apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
