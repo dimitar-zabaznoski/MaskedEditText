@@ -37,6 +37,21 @@ You can also set the mask programatically.
 
 *See Sample for more details*
 
+Download
+--------
+Gradle
+```
+implementation 'mk.webfactory.dz:maskededittext:1.0'
+```
+Maven
+```
+<dependency>
+  <groupId>mk.webfactory.dz</groupId>
+  <artifactId>maskededittext</artifactId>
+  <version>1.0</version>
+  <type>pom</type>
+</dependency>
+```
 
 Limitations
 -----------
@@ -55,11 +70,9 @@ Acceptance criteria
 2. Backspace removes masked characters only (raw user input)
 3. Adding/removing text works anywhere in the current input
 4. Enforce mask length trims excess text outside of mask. 
-4.1. ~~Plays well with InputFilter.LengthFilter~~
+<br> 4.1. ~~Plays well with InputFilter.LengthFilter~~
 5. ~~Input type is not respected only for non masked characters~~
 6. Effectively separates raw input from masked input
 7. Survives configuration changes automatically
 8. Works on all android versions and devices
-
-*See unit tests in library module*
  
