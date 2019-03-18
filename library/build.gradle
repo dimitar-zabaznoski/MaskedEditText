@@ -57,8 +57,9 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.1.0-alpha02'
+    compileOnly 'androidx.appcompat:appcompat:1.1.0-alpha02'
 
+    testImplementation 'androidx.appcompat:appcompat:1.1.0-alpha02'
     testImplementation 'junit:junit:4.12'
     testImplementation "org.robolectric:robolectric:3.8"
 
