@@ -27,21 +27,19 @@ apply plugin: 'com.android.library'
 ext {
     PUBLISH_GROUP_ID = 'mk.webfactory.dz'
     PUBLISH_ARTIFACT_ID = 'maskededittext'
-    PUBLISH_VERSION = '1.0'
+    PUBLISH_VERSION = '2.0'
 }
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion '26.0.2'
+    compileSdkVersion 28
     resourcePrefix 'maskededittext_'
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "2.0"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -59,12 +57,13 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:appcompat-v7:26.1.0'
+    compileOnly 'androidx.appcompat:appcompat:1.1.0-alpha02'
 
+    testImplementation 'androidx.appcompat:appcompat:1.1.0-alpha02'
     testImplementation 'junit:junit:4.12'
-    testImplementation "org.robolectric:robolectric:3.6.1"
+    testImplementation 'org.robolectric:robolectric:4.2'
 
-    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0-alpha4', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 }

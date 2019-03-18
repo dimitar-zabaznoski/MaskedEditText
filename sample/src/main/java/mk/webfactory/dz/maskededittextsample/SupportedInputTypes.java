@@ -1,5 +1,6 @@
 package mk.webfactory.dz.maskededittextsample;
 
+import androidx.annotation.NonNull;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,14 +30,15 @@ class SupportedInputTypes {
     static final class InputTypeNameWrapper {
 
         final int value;
-        final String name;
+        @NonNull final String name;
 
-        InputTypeNameWrapper(int value, String name) {
+        InputTypeNameWrapper(int value, @NonNull String name) {
             this.value = value;
             this.name = name;
         }
 
         @Override
+        @NonNull
         public String toString() {
             return name;
         }

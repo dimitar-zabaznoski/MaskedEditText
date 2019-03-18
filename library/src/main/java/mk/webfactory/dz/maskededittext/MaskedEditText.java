@@ -28,8 +28,8 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.AppCompatEditText;
+import androidx.annotation.NonNull;
+import androidx.appcompat.widget.AppCompatEditText;
 import android.util.AttributeSet;
 
 import static mk.webfactory.dz.maskededittext.Mask.DEFAULT_MASK_CHARACTER;
@@ -58,16 +58,21 @@ public class MaskedEditText extends AppCompatEditText {
     private MaskEnforcingTextWatcher maskEnforcingTextWatcher;
 
     public MaskedEditText(Context context) {
-        this(context, null);
+        super(context);
+        init(context, null);
     }
 
     public MaskedEditText(Context context, AttributeSet attrs) {
-        this(context, attrs, R.attr.editTextStyle);
+        super(context, attrs);
+        init(context, attrs);
     }
 
     public MaskedEditText(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        init(context, attrs);
+    }
 
+    private void init(Context context, AttributeSet attrs) {
         TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.MaskedEditText, 0, 0);
         try {
             String maskCharacterString = a.getString(R.styleable.MaskedEditText_maskededittext_maskCharacter);
