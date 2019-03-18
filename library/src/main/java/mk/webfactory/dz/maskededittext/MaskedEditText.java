@@ -28,8 +28,8 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.AppCompatEditText;
+import androidx.annotation.NonNull;
+import androidx.appcompat.widget.AppCompatEditText;
 import android.util.AttributeSet;
 
 import static mk.webfactory.dz.maskededittext.Mask.DEFAULT_MASK_CHARACTER;
