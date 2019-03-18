@@ -27,7 +27,7 @@ apply plugin: 'com.android.library'
 ext {
     PUBLISH_GROUP_ID = 'mk.webfactory.dz'
     PUBLISH_ARTIFACT_ID = 'maskededittext'
-    PUBLISH_VERSION = '1.0'
+    PUBLISH_VERSION = '2.0'
 }
 
 android {
@@ -36,8 +36,8 @@ android {
 
     defaultConfig {
         minSdkVersion 14
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "2.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
