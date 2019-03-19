@@ -39,16 +39,19 @@ You can also set the mask programatically.
 
 Download
 --------
+
+_** For projects that do not use AndroidX use version `1.0`_
+
 Gradle
 ```
-implementation 'mk.webfactory.dz:maskededittext:1.0'
+implementation 'mk.webfactory.dz:maskededittext:2.0'
 ```
 Maven
 ```
 <dependency>
   <groupId>mk.webfactory.dz</groupId>
   <artifactId>maskededittext</artifactId>
-  <version>1.0</version>
+  <version>2.0</version>
   <type>pom</type>
 </dependency>
 ```
