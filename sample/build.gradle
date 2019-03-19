@@ -38,7 +38,7 @@ android {
 
 dependencies {
     debugImplementation project(':library')
-    releaseImplementation 'mk.webfactory.dz:maskededittext:1.0'
+    releaseImplementation 'mk.webfactory.dz:maskededittext:2.0'
     implementation 'androidx.appcompat:appcompat:1.1.0-alpha02'
     implementation 'com.jakewharton:butterknife:10.1.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
